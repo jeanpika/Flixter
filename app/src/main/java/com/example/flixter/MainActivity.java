@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         AsyncHttpClient client = new AsyncHttpClient();
+
         client.get(NOW_PLAYING_URL, new JsonHttpResponseHandler() {
             @Override
              public void onSuccess(int i, Headers headers, JSON json) {
